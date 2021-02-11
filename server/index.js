@@ -30,6 +30,8 @@ app.use(function (req, res, next) {
   next();
 });
 
+console.log();
+
 app.get('/presentList', (req, res) => {
   const length = req.query.length;
   const id = Number(req.query.id);
