@@ -102,8 +102,7 @@ const TabItem = styled.div<{ active: boolean }>`
   font-size: 20px;
   margin-left: 20px;
   height: 100%;
-  border-bottom: 2px solid
-    ${(props) => (props.active ? colors.blue : colors.black)};
+  border-bottom: 2px solid ${(props) => (props.active ? colors.blue : 'none')};
   color: ${(props) => (props.active ? colors.blue : colors.black)};
   cursor: pointer;
 `;
