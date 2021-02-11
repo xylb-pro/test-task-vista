@@ -4,7 +4,7 @@ const presentList = require('./presentList.json');
 const quittingList = require('./quittingList.json');
 
 const app = express();
-const PORT = 8000;
+const PORT = process.env.PORT || 8000;
 
 app.use(function (req, res, next) {
   // Website you wish to allow to connect
